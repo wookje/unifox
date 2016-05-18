@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-const int MAX = 1000;
+const int MAX = 10;
 
 int top = 0;
-int stack[MAX+10] = { 0, };
+int stack[MAX+5] = { 0, };
 
 void Push(int n)
 {
@@ -43,10 +43,20 @@ bool isEmpty()
 	return false;
 }
 
+void print()
+{
+	for (int i = 1; i <= MAX; i++)
+	{
+		printf("stack[%d] = %d\n", i, stack[i]);
+	}
+	printf("\n");
+}
+
 int main()
 {
 	// push(a);
 	// pop();
+	// print();
 
 	return 0;
 }
