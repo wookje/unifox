@@ -1,8 +1,9 @@
 #include <stdio.h>
 
 const int MAX = 1000;
+
 int top = 0;
-int stack[MAX] = { 0, };
+int stack[MAX+10] = { 0, };
 
 void Push(int n)
 {
