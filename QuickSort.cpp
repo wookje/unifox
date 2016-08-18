@@ -16,7 +16,7 @@ void input()
 	}
 }
 
-void Quick_Sort(int s, int e)
+void QuickSort(int s, int e)
 {
 	if (s >= e) return;
 
@@ -40,8 +40,8 @@ void Quick_Sort(int s, int e)
 	}
 	swap(DATA[s], DATA[j], temp);
 
-	Quick_Sort(s, j-1);
-	Quick_Sort(j+1, e);
+	QuickSort(s, j-1);
+	QuickSort(j+1, e);
 }
 
 void output()
@@ -55,7 +55,7 @@ void output()
 int main()
 {
 	input();
-	Quick_Sort(1, N);
+	QuickSort(1, N);
 	output();
 
 	return 0;
